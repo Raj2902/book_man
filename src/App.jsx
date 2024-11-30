@@ -4,6 +4,7 @@ import Navbar from "./Components/Navbar";
 import { Link, Outlet } from "react-router-dom";
 import { useEffect } from "react";
 import { setBook } from "../utils/Redux/reducer";
+import Footer from "./Components/Footer";
 
 function App() {
   // const data = useSelector((state) => state.books);
@@ -37,6 +38,7 @@ function App() {
         ))}
       </div>
       <Outlet />
+      <Footer />
     </div>
   );
 }
