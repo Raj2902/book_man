@@ -6,7 +6,7 @@ function Error() {
       <div className="error-container">
         <div className="error-code">404</div>
         <div className="error-message">Page Not Found</div>
-        <Link to="/" className="back-button">
+        <Link to="/home" className="back-button">
           Back to Home
         </Link>
       </div>

@@ -27,7 +27,7 @@ function App() {
     <div>
       <Navbar />
       <p className="back-to-browse">
-        <Link to="/books/browse-books">Back to Browse</Link>
+        <Link to="/home/browse-books">Back to Browse</Link>
       </p>
       <p className="selectCattext">Select Category</p>
       <div className="category-filter">
@@ -35,7 +35,7 @@ function App() {
           <Link
             key={item}
             className="category-tag"
-            to={`/books/category/${item}`}
+            to={`/home/category/${item}`}
           >
             <button className="category-btn">{item}</button>
           </Link>

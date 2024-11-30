@@ -45,7 +45,7 @@ function AddBook() {
         booksInLocalStorage.push(formObj);
       }
       localStorage.setItem("data", JSON.stringify(booksInLocalStorage));
-      navigate("/books/browse-books");
+      navigate("/home/browse-books");
     }
   };
   const getCurrentDate = () => {
