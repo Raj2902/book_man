@@ -21,20 +21,26 @@ const appRouter = createBrowserRouter([
         path: "/",
         element: <BookList />,
       },
+    ],
+  },
+  {
+    path: "/books",
+    element: <App />,
+    children: [
       {
-        path: "/browse-books",
+        path: "/books/browse-books",
         element: <BrowseBooks />,
       },
       {
-        path: "/add-book",
+        path: "/books/add-book",
         element: <AddBook />,
       },
       {
-        path: "/book-details/:id",
+        path: "/books/book-details/:id",
         element: <BookDetails />,
       },
       {
-        path: "/books/:category",
+        path: "/books/category/:category",
         element: <Category />,
       },
     ],

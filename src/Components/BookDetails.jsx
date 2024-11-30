@@ -10,7 +10,7 @@ function BookDetails() {
       {book.length > 0 ? (
         book.map((data) => {
           return (
-            <div className="card-center">
+            <div key={data.id} className="card-center">
               <div className="book-card increased-card-height">
                 <span className="rating">
                   <i className="fa fa-star" aria-hidden="true"></i>
