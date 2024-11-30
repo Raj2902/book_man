@@ -4,6 +4,9 @@
     padding: 0;
     font-family: sans-serif;
 }
+#root{
+    margin-bottom: 100px;
+}
 ul>a{
     text-decoration: none;
     color: #fff;
@@ -237,7 +240,7 @@ footer {
     padding: 20px;
     background-color: #f0f0f0;
     margin-top: 50px;
-    position: relative;
+    position: fixed;
     bottom: 0;
     width: -webkit-fill-available;
 }
