@@ -13,28 +13,52 @@ import Category from "./Components/Category.jsx";
 
 const appRouter = createBrowserRouter([
   {
-    path: "/home",
+    path: "/",
     element: <App />,
     errorElement: <Error />,
     children: [
       {
-        path: "/home",
+        path: "/",
         element: <BookList />,
       },
+    ],
+  },
+  {
+    path: "/browse-books",
+    element: <App />,
+    children: [
       {
-        path: "/home/browse-books",
+        path: "/browse-books",
         element: <BrowseBooks />,
       },
+    ],
+  },
+  {
+    path: "/add-book",
+    element: <App />,
+    children: [
       {
-        path: "/home/add-book",
+        path: "/add-book",
         element: <AddBook />,
       },
+    ],
+  },
+  {
+    path: "/book-details/:id",
+    element: <App />,
+    children: [
       {
-        path: "/home/book-details/:id",
+        path: "/book-details/:id",
         element: <BookDetails />,
       },
+    ],
+  },
+  {
+    path: "/category/:category",
+    element: <App />,
+    children: [
       {
-        path: "/home/category/:category",
+        path: "/category/:category",
         element: <Category />,
       },
     ],

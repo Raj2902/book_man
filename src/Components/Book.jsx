@@ -23,7 +23,7 @@ export default function BookComponent(props) {
         <p className="book-author">{author}</p>
         <p className="book-description">{desc.slice(0, 70) + "..."}</p>
         <p className="book-details-link">
-          <Link to={`/home/book-details/${id}`}>View Details</Link>
+          <Link to={`/book-details/${id}`}>View Details</Link>
         </p>
       </div>
     </div>

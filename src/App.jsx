@@ -27,16 +27,12 @@ function App() {
     <div>
       <Navbar />
       <p className="back-to-browse">
-        <Link to="/home/browse-books">Back to Browse</Link>
+        <Link to="/browse-books">Back to Browse</Link>
       </p>
       <p className="selectCattext">Select Category</p>
       <div className="category-filter">
         {useSelector((data) => data.filters).map((item) => (
-          <Link
-            key={item}
-            className="category-tag"
-            to={`/home/category/${item}`}
-          >
+          <Link key={item} className="category-tag" to={`/category/${item}`}>
             <button className="category-btn">{item}</button>
           </Link>
         ))}
