@@ -13,3 +13,13 @@ https://github.com/Raj2902/book_man
 # Project Deployed
 
 https://book-man.vercel.app/
+
+# Project Setup
+
+1. Download the zip file.
+2. Extract the zip file.
+3. Open the project in your code editor.
+4. Open the terminal in your code editor.
+5. Run the command npm install to install all the dependencies.
+6. Run the command npm run dev to start the project.
+7. Open the browser and go to link provided by your code editor to see the project.
