@@ -13,7 +13,6 @@ import Category from "./Components/Category.jsx";
 
 const appRouter = createBrowserRouter([
   {
-    path: "/",
     element: <App />,
     errorElement: <Error />,
     children: [
@@ -21,42 +20,18 @@ const appRouter = createBrowserRouter([
         path: "/",
         element: <BookList />,
       },
-    ],
-  },
-  {
-    path: "/browse-books",
-    element: <App />,
-    children: [
       {
         path: "/browse-books",
         element: <BrowseBooks />,
       },
-    ],
-  },
-  {
-    path: "/add-book",
-    element: <App />,
-    children: [
       {
         path: "/add-book",
         element: <AddBook />,
       },
-    ],
-  },
-  {
-    path: "/book-details/:id",
-    element: <App />,
-    children: [
       {
         path: "/book-details/:id",
         element: <BookDetails />,
       },
-    ],
-  },
-  {
-    path: "/category/:category",
-    element: <App />,
-    children: [
       {
         path: "/category/:category",
         element: <Category />,
