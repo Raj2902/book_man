@@ -48,16 +48,6 @@ function AddBook() {
       navigate("/browse-books");
     }
   };
-  const getCurrentDate = () => {
-    const date = new Date();
-    return (
-      date.getFullYear() +
-      "-" +
-      (Number(date.getMonth()) + 1) +
-      "-" +
-      date.getDate()
-    );
-  };
 
   return (
     <div className="add-book">
@@ -67,7 +57,16 @@ function AddBook() {
         <label htmlFor="published_year">Published Date:</label>
         <input
           type="date"
-          max={getCurrentDate()}
+          max={(() => {
+            const date = new Date();
+            const year = String(date.getFullYear());
+            const month = String(Number(date.getMonth()) + 1);
+            const day = String(date.getDate());
+            const fullDate = `${year}-${month > 9 ? month : `0${month}`}-${
+              day > 9 ? day : `0${day}`
+            }`;
+            return `${fullDate}`;
+          })()}
           id="published_year"
           name="publishedYear"
           required
